@@ -1,0 +1,346 @@
+{
+    "Google": {
+        "Software Engineer": [
+            "Java",
+            "Python",
+            "C++",
+            "Algorithms",
+            "Data structures",
+            "System design",
+            "Code review",
+            "API integration",
+            "Agile",
+            "Cloud computing",
+            "Machine learning"
+        ],
+        "Product Manager": [
+            "Product lifecycle",
+            "Roadmap",
+            "Stakeholder management",
+            "Market analysis",
+            "Agile methodologies",
+            "User research",
+            "Cross-functional team",
+            "Feature prioritization",
+            "Go-to-market strategy",
+            "Data-driven decision making"
+        ],
+        "Data Scientist": [
+            "Data analysis",
+            "Machine learning",
+            "Statistical modeling",
+            "Data visualization",
+            "Python",
+            "R",
+            "Big Data",
+            "Predictive analytics",
+            "SQL",
+            "Experimental design",
+            "A/B testing"
+        ],
+        "UX/UI Designer": [
+            "User experience",
+            "User interface",
+            "Wireframes",
+            "Prototyping",
+            "Usability testing",
+            "Interaction design",
+            "Figma",
+            "Sketch",
+            "Design systems",
+            "User research",
+            "Visual design"
+        ],
+        "Digital Marketing Specialist": [
+            "Digital marketing",
+            "SEO",
+            "SEM",
+            "Google Ads",
+            "Content strategy",
+            "Campaign management",
+            "A/B testing",
+            "Analytics",
+            "Social media",
+            "Conversion optimization"
+        ],
+        "Sales Manager": [
+            "Lead generation",
+            "Sales pipeline",
+            "CRM",
+            "B2B",
+            "B2C",
+            "Account management",
+            "Revenue growth",
+            "Negotiation",
+            "Relationship management",
+            "Forecasting",
+            "Cross-selling"
+        ],
+        "Cloud Solutions Architect": [
+            "Cloud architecture",
+            "Google Cloud Platform",
+            "AWS",
+            "Azure",
+            "Infrastructure",
+            "Scalability",
+            "Security",
+            "DevOps",
+            "API management",
+            "Solution design",
+            "Cost optimization"
+        ],
+        "Technical Support Specialist": [
+            "Troubleshooting",
+            "Customer support",
+            "Ticketing system",
+            "Technical documentation",
+            "Product knowledge",
+            "Issue resolution",
+            "Communication skills",
+            "Hardware",
+            "Software",
+            "Escalations",
+            "Remote support"
+        ]
+    },
+    "Amazon": {
+        "Software Engineer": [
+            "Java",
+            "Python",
+            "C++",
+            "Distributed systems",
+            "AWS",
+            "API development",
+            "Code review",
+            "Agile methodologies",
+            "Cloud computing",
+            "Automation"
+        ],
+        "Product Manager": [
+            "Product lifecycle management",
+            "Customer obsession",
+            "Roadmap planning",
+            "Stakeholder management",
+            "Data-driven",
+            "Agile product development",
+            "Competitive analysis",
+            "Go-to-market strategy"
+        ],
+        "Data Scientist": [
+            "Data analysis",
+            "Machine learning",
+            "SQL",
+            "Python",
+            "R",
+            "Data visualization",
+            "Predictive analytics",
+            "A/B testing",
+            "Data warehousing"
+        ],
+        "UX/UI Designer": [
+            "User experience",
+            "User interface",
+            "Prototyping",
+            "Wireframing",
+            "Usability testing",
+            "Accessibility",
+            "Visual design",
+            "Figma",
+            "Sketch"
+        ],
+        "Digital Marketing Specialist": [
+            "SEO",
+            "SEM",
+            "Amazon Ads",
+            "Content strategy",
+            "Keyword research",
+            "Analytics",
+            "Campaign optimization",
+            "Marketplace performance",
+            "Conversion optimization"
+        ],
+        "Sales Manager": [
+            "Sales pipeline",
+            "B2B sales",
+            "Account management",
+            "CRM tools",
+            "Lead generation",
+            "Negotiation",
+            "Customer relationships"
+        ],
+        "Cloud Solutions Architect": [
+            "AWS",
+            "Cloud infrastructure",
+            "DevOps",
+            "Security architecture",
+            "Scalability",
+            "Deployment automation",
+            "API management",
+            "Solution design"
+        ],
+        "Technical Support Specialist": [
+            "Troubleshooting",
+            "Ticketing system",
+            "Customer support",
+            "Issue resolution",
+            "Hardware support",
+            "Software support",
+            "Escalation management",
+            "Communication skills"
+        ]
+    },
+    "Flipkart": {
+        "Software Engineer": [
+            "System design",
+            "Microservices",
+            "Java",
+            "Python",
+            "API integration",
+            "Scalability",
+            "DevOps",
+            "Automation scripts"
+        ],
+        "Product Manager": [
+            "Demand planning",
+            "Category management",
+            "Consumer insights",
+            "User experience",
+            "Growth strategy",
+            "Cross-functional leadership",
+            "Feature prioritization"
+        ],
+        "Data Scientist": [
+            "Data analytics",
+            "Reporting tools",
+            "KPI tracking",
+            "Forecasting",
+            "Business intelligence",
+            "SQL",
+            "Dashboard creation"
+        ],
+        "UX/UI Designer": [
+            "User research",
+            "Wireframes",
+            "Interaction design",
+            "Visual storytelling",
+            "Rapid prototyping",
+            "Stakeholder interviews",
+            "Mobile-first UX"
+        ],
+        "Digital Marketing Specialist": [
+            "Campaign management",
+            "CRM",
+            "SEO",
+            "SEM",
+            "Event management",
+            "Category promotion",
+            "Channel performance",
+            "Consumer acquisition",
+            "Social media strategy"
+        ],
+        "Sales Manager": [
+            "Business development",
+            "Partner onboarding",
+            "Account management",
+            "Revenue growth",
+            "Strategic sales",
+            "Negotiations",
+            "Stakeholder relationships"
+        ],
+        "Cloud Solutions Architect": [
+            "Cloud migration",
+            "Infrastructure monitoring",
+            "Systems automation",
+            "Scalability engineering",
+            "Security best practices",
+            "CI/CD pipelines"
+        ],
+        "Technical Support Specialist": [
+            "Technical issue resolution",
+            "Customer assistance",
+            "Process documentation",
+            "Remote diagnostics",
+            "Teamwork",
+            "IT support tools",
+            "Service optimization"
+        ]
+    },
+    "AMD": {
+        "Software Engineer": [
+            "Silicon design",
+            "C/C++ programming",
+            "RTL",
+            "Verilog",
+            "VHDL",
+            "System Design Engineer",
+            "FPGA",
+            "GPU",
+            "CPU architecture",
+            "Firmware development",
+            "Hardware-software co-design"
+        ],
+        "Product Manager": [
+            "Product roadmap",
+            "Market segmentation",
+            "Competitive analysis",
+            "Product launches",
+            "Stakeholder alignment",
+            "Technical product management",
+            "Customer engagement"
+        ],
+        "Data Scientist": [
+            "Performance analytics",
+            "Statistical modeling",
+            "Big Data",
+            "Data mining",
+            "Matlab",
+            "Python",
+            "R",
+            "Algorithm development",
+            "Visualizations"
+        ],
+        "UX/UI Designer": [
+            "Human-computer interaction",
+            "Interface design",
+            "Usability standards",
+            "System flows",
+            "CAD tools",
+            "Task analysis"
+        ],
+        "Digital Marketing Specialist": [
+            "Product marketing",
+            "Technical marketing",
+            "Content creation",
+            "Industry trends",
+            "Demand generation",
+            "Event management",
+            "Brand strategy"
+        ],
+        "Sales Manager": [
+            "Enterprise sales",
+            "Account management",
+            "Channel partners",
+            "Market penetration",
+            "Solution selling",
+            "Sales forecasting",
+            "Customer acquisition"
+        ],
+        "Cloud Solutions Architect": [
+            "High-performance computing",
+            "Data center infrastructure",
+            "Parallel processing",
+            "GPU optimization",
+            "CPU optimization",
+            "Security protocols",
+            "Network architecture"
+        ],
+        "Technical Support Specialist": [
+            "System debugging",
+            "Firmware troubleshooting",
+            "Hardware diagnostics",
+            "Customer escalation",
+            "Performance analysis",
+            "Documentation"
+        ]
+    }
+}

@@ -1,0 +1,104 @@
+/* General Body and Typography */
+body {
+  font-family: 'Poppins', sans-serif; /* A more modern, elegant font */
+  background: linear-gradient(135deg, #e0f2fe 0%, #ede7f6 100%); /* Soft, two-color background gradient */
+  color: #2c3e50; /* A dark charcoal for excellent readability */
+  line-height: 1.7;
+}
+
+h1, h2, h3 {
+  color: #4b0082; /* Deep Indigo for a strong, sophisticated feel */
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+/* Container */
+.container {
+  max-width: 1300px; /* Wider container for a more spacious layout */
+  margin: auto;
+  padding: 3rem; /* Increased padding */
+}
+
+/* Buttons */
+button {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 50px; /* Pill-shaped buttons for a modern look */
+  background: linear-gradient(45deg, #4b0082, #ff1493); /* Vibrant gradient */
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  background-size: 200% 200%;
+}
+
+button:hover {
+  background-position: right center; /* Gradient shift on hover */
+  transform: translateY(-3px) scale(1.03); /* Lift and grow effect */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Form Elements */
+input, textarea, select {
+  width: 100%;
+  padding: 14px;
+  margin-top: 8px;
+  margin-bottom: 20px; /* More space below form elements */
+  border: 1px solid #dcdfe6; /* Lighter border for a softer look */
+  border-radius: 8px;
+  background-color: #fcfdfe;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus, textarea:focus, select:focus {
+  border-color: #4b0082;
+  box-shadow: 0 0 0 3px rgba(75, 0, 130, 0.2); /* Soft focus ring */
+  outline: none;
+}
+
+/* Cards */
+.card {
+  background-color: white;
+  border-radius: 1.5rem; /* More rounded corners */
+  box-shadow: 0 8px 25px rgba(60, 60, 120, 0.15); /* Softer, deeper shadow */
+  padding: 2.5rem;
+  margin: 2rem 0; /* Increased margin between cards */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(60, 60, 120, 0.25);
+}
+
+/* Navbar */
+.navbar {
+  background: white;
+  box-shadow: 0 4px 15px rgba(60, 60, 120, 0.1);
+  padding: 1rem 0;
+}
+
+.navbar a {
+  color: #2c3e50;
+  text-decoration: none;
+  padding: 12px 20px;
+  transition: color 0.3s ease, background-color 0.3s ease;
+  font-weight: 500;
+  border-radius: 8px;
+}
+
+.navbar a:hover {
+  color: white;
+  background-color: #4b0082;
+}
+
+/* Footer */
+.footer {
+  background-color: #f8f9fa;
+  padding: 2.5rem;
+  text-align: center;
+  border-top: 1px solid #e6eaf0;
+  margin-top: 3rem;
+}

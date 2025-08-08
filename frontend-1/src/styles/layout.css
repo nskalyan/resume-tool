@@ -1,0 +1,118 @@
+:root {
+  --primary-color: #4b0082; /* Deep Indigo for a strong, elegant feel */
+  --accent-color: #ff1493; /* Deep Pink for highlights and calls to action */
+  --secondary-color: #f0f4f8; /* Soft, light background */
+  --text-color: #2c3e50; /* Dark charcoal for excellent readability */
+  --text-light-color: #6c757d; /* Lighter text for secondary information */
+  --shadow-color: rgba(60, 60, 120, 0.15); /* A softer, more elegant shadow */
+  --border-radius: 12px; /* Uniform rounded corners */
+  --font-family: 'Poppins', sans-serif; /* A clean, modern sans-serif font */
+}
+
+/* Global Styles */
+body {
+  font-family: var(--font-family);
+  background: linear-gradient(135deg, #e0f2fe 0%, #ede7f6 100%);
+  color: var(--text-color);
+  line-height: 1.7; /* Improved line height for readability */
+  min-height: 100vh;
+}
+
+/* Container for Centering Content */
+.container {
+  max-width: 1300px; /* Increased max-width for more space on large screens */
+  margin: 0 auto;
+  padding: 2.5rem; /* Increased padding for better spacing */
+  transition: all 0.3s ease; /* Smooth transitions */
+}
+
+/* Responsive Container Padding */
+@media (max-width: 768px) {
+  .container {
+    padding: 1.5rem;
+  }
+}
+
+/* Header */
+.header {
+  background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+  color: white;
+  padding: 2.5rem 0; /* More generous vertical padding */
+  text-align: center;
+  box-shadow: 0 4px 15px var(--shadow-color);
+  margin-bottom: 3rem; /* Increased margin to separate from content */
+  border-radius: 0 0 var(--border-radius) var(--border-radius);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+/* Footer */
+.footer {
+  background-color: var(--text-color);
+  color: var(--secondary-color);
+  padding: 1.5rem 0;
+  text-align: center;
+  margin-top: 4rem; /* More space above the footer */
+}
+
+/* Card Component */
+.card {
+  background-color: white;
+  border-radius: 1.5rem; /* More rounded corners for a modern look */
+  box-shadow: 0 8px 25px var(--shadow-color);
+  padding: 2.5rem; /* Increased padding inside the card */
+  margin: 2rem 0; /* More space between cards */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Subtle lift on hover */
+  box-shadow: 0 12px 30px var(--shadow-color);
+}
+
+/* Buttons with Gradient and Hover Effects */
+.button {
+  background: linear-gradient(45deg, var(--primary-color), var(--accent-color));
+  color: white;
+  padding: 1rem 2.5rem;
+  border: none;
+  border-radius: 50px; /* Pill-shaped buttons */
+  cursor: pointer;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  background-size: 200% 200%;
+}
+
+.button:hover {
+  background-position: right center; /* Gradient shift on hover */
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Typography */
+h1, h2, h3 {
+  color: var(--primary-color);
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  margin-bottom: 1.5rem; /* More space below headings */
+}
+
+/* Utility Classes */
+.text-center {
+  text-align: center;
+}
+
+.mt-4 {
+  margin-top: 2rem;
+}
+
+.mb-4 {
+  margin-bottom: 2rem;
+}
+
+.p-4 {
+  padding: 2rem;
+}

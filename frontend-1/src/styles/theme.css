@@ -1,0 +1,97 @@
+:root {
+--primary-color: #7f00ff; /* A deep, elegant purple /
+--primary-light-color: #9d2aff;
+--secondary-color: #f0f4f8; / A light, clean off-white /
+--accent-color: #ff007f; / A bold, vibrant fuchsia /
+--text-color: #2c3e50; / Dark charcoal for readability /
+--text-light-color: #7f8c8d;
+--background-color: #ffffff;
+--border-color: #e6eaf0; / Soft border color */
+--shadow-color: rgba(60, 64, 67, 0.15);
+--font-family: 'Poppins', sans-serif;
+}
+
+body {
+font-family: var(--font-family);
+background-color: var(--secondary-color);
+color: var(--text-color);
+line-height: 1.7;
+transition: background-color 0.4s ease;
+}
+
+h1, h2, h3 {
+color: var(--primary-color);
+font-weight: 700;
+letter-spacing: -0.5px;
+}
+
+a {
+color: var(--primary-color);
+text-decoration: none;
+font-weight: 500;
+transition: color 0.3s ease;
+}
+
+a:hover {
+color: var(--accent-color);
+text-decoration: underline;
+}
+
+button {
+background: linear-gradient(45deg, var(--primary-color), var(--primary-light-color));
+color: white;
+border: none;
+border-radius: 50px;
+padding: 12px 28px;
+cursor: pointer;
+font-weight: 600;
+letter-spacing: 0.5px;
+box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+transition: all 0.3s ease;
+background-size: 200% 200%;
+}
+
+button:hover {
+background-position: right center;
+transform: translateY(-3px) scale(1.03);
+box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.container {
+max-width: 1200px;
+margin: auto;
+padding: 20px;
+}
+
+.card {
+background-color: var(--background-color);
+border: 1px solid var(--border-color);
+border-radius: 12px;
+box-shadow: 0 4px 12px var(--shadow-color);
+padding: 30px;
+transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.card:hover {
+box-shadow: 0 8px 20px var(--shadow-color);
+transform: translateY(-5px);
+}
+
+.header {
+background: linear-gradient(90deg, var(--primary-color), var(--primary-light-color));
+color: white;
+padding: 24px;
+text-align: center;
+box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.footer {
+background: linear-gradient(90deg, var(--primary-color), var(--primary-light-color));
+color: white;
+padding: 16px;
+text-align: center;
+position: relative;
+bottom: 0;
+width: 100%;
+box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+}
