@@ -33,7 +33,9 @@ const ExampleViewerPage: React.FC = () => {
     } catch (err) {
       console.warn("No matching resume, using fallback.");
       setError("No exact example found. Showing general example.");
-      setResumeLink("/examples/default_example_resume.pdf"); // fallback
+
+      // ✅ Deployment-safe: use import.meta.env.BASE_URL so fallback works on Vercel/Netlify
+      setResumeLink(`${import.meta.env.BASE_URL}examples/default_example_resume.pdf`);
     } finally {
       setLoading(false);
     }

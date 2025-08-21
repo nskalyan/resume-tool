@@ -1,6 +1,6 @@
 {
-    "Google": {
-        "Software Engineer": [
+    "google": {
+        "software engineer": [
             "Java",
             "Python",
             "C++",
@@ -13,7 +13,7 @@
             "Cloud computing",
             "Machine learning"
         ],
-        "Product Manager": [
+        "product manager": [
             "Product lifecycle",
             "Roadmap",
             "Stakeholder management",
@@ -25,7 +25,7 @@
             "Go-to-market strategy",
             "Data-driven decision making"
         ],
-        "Data Scientist": [
+        "data scientist": [
             "Data analysis",
             "Machine learning",
             "Statistical modeling",
@@ -38,7 +38,7 @@
             "Experimental design",
             "A/B testing"
         ],
-        "UX/UI Designer": [
+        "ux/ui designer": [
             "User experience",
             "User interface",
             "Wireframes",
@@ -51,7 +51,7 @@
             "User research",
             "Visual design"
         ],
-        "Digital Marketing Specialist": [
+        "digital marketing specialist": [
             "Digital marketing",
             "SEO",
             "SEM",
@@ -63,7 +63,7 @@
             "Social media",
             "Conversion optimization"
         ],
-        "Sales Manager": [
+        "sales manager": [
             "Lead generation",
             "Sales pipeline",
             "CRM",
@@ -76,7 +76,7 @@
             "Forecasting",
             "Cross-selling"
         ],
-        "Cloud Solutions Architect": [
+        "cloud solutions architect": [
             "Cloud architecture",
             "Google Cloud Platform",
             "AWS",
@@ -89,7 +89,7 @@
             "Solution design",
             "Cost optimization"
         ],
-        "Technical Support Specialist": [
+        "technical support specialist": [
             "Troubleshooting",
             "Customer support",
             "Ticketing system",
@@ -103,8 +103,8 @@
             "Remote support"
         ]
     },
-    "Amazon": {
-        "Software Engineer": [
+    "amazon": {
+        "software engineer": [
             "Java",
             "Python",
             "C++",
@@ -116,7 +116,7 @@
             "Cloud computing",
             "Automation"
         ],
-        "Product Manager": [
+        "product manager": [
             "Product lifecycle management",
             "Customer obsession",
             "Roadmap planning",
@@ -126,7 +126,7 @@
             "Competitive analysis",
             "Go-to-market strategy"
         ],
-        "Data Scientist": [
+        "data scientist": [
             "Data analysis",
             "Machine learning",
             "SQL",
@@ -137,7 +137,7 @@
             "A/B testing",
             "Data warehousing"
         ],
-        "UX/UI Designer": [
+        "ux/ui designer": [
             "User experience",
             "User interface",
             "Prototyping",
@@ -148,7 +148,7 @@
             "Figma",
             "Sketch"
         ],
-        "Digital Marketing Specialist": [
+        "digital marketing specialist": [
             "SEO",
             "SEM",
             "Amazon Ads",
@@ -159,7 +159,7 @@
             "Marketplace performance",
             "Conversion optimization"
         ],
-        "Sales Manager": [
+        "sales manager": [
             "Sales pipeline",
             "B2B sales",
             "Account management",
@@ -168,7 +168,7 @@
             "Negotiation",
             "Customer relationships"
         ],
-        "Cloud Solutions Architect": [
+        "cloud solutions architect": [
             "AWS",
             "Cloud infrastructure",
             "DevOps",
@@ -178,7 +178,7 @@
             "API management",
             "Solution design"
         ],
-        "Technical Support Specialist": [
+        "technical support specialist": [
             "Troubleshooting",
             "Ticketing system",
             "Customer support",
@@ -189,8 +189,8 @@
             "Communication skills"
         ]
     },
-    "Flipkart": {
-        "Software Engineer": [
+    "flipkart": {
+        "software engineer": [
             "System design",
             "Microservices",
             "Java",
@@ -200,7 +200,7 @@
             "DevOps",
             "Automation scripts"
         ],
-        "Product Manager": [
+        "product manager": [
             "Demand planning",
             "Category management",
             "Consumer insights",
@@ -209,7 +209,7 @@
             "Cross-functional leadership",
             "Feature prioritization"
         ],
-        "Data Scientist": [
+        "data scientist": [
             "Data analytics",
             "Reporting tools",
             "KPI tracking",
@@ -218,7 +218,7 @@
             "SQL",
             "Dashboard creation"
         ],
-        "UX/UI Designer": [
+        "ux/ui designer": [
             "User research",
             "Wireframes",
             "Interaction design",
@@ -227,7 +227,7 @@
             "Stakeholder interviews",
             "Mobile-first UX"
         ],
-        "Digital Marketing Specialist": [
+        "digital marketing specialist": [
             "Campaign management",
             "CRM",
             "SEO",
@@ -238,7 +238,7 @@
             "Consumer acquisition",
             "Social media strategy"
         ],
-        "Sales Manager": [
+        "sales manager": [
             "Business development",
             "Partner onboarding",
             "Account management",
@@ -247,7 +247,7 @@
             "Negotiations",
             "Stakeholder relationships"
         ],
-        "Cloud Solutions Architect": [
+        "cloud solutions architect": [
             "Cloud migration",
             "Infrastructure monitoring",
             "Systems automation",
@@ -255,7 +255,7 @@
             "Security best practices",
             "CI/CD pipelines"
         ],
-        "Technical Support Specialist": [
+        "technical support specialist": [
             "Technical issue resolution",
             "Customer assistance",
             "Process documentation",
@@ -265,8 +265,8 @@
             "Service optimization"
         ]
     },
-    "AMD": {
-        "Software Engineer": [
+    "amd": {
+        "software engineer": [
             "Silicon design",
             "C/C++ programming",
             "RTL",
@@ -279,7 +279,7 @@
             "Firmware development",
             "Hardware-software co-design"
         ],
-        "Product Manager": [
+        "product manager": [
             "Product roadmap",
             "Market segmentation",
             "Competitive analysis",
@@ -288,7 +288,7 @@
             "Technical product management",
             "Customer engagement"
         ],
-        "Data Scientist": [
+        "data scientist": [
             "Performance analytics",
             "Statistical modeling",
             "Big Data",
@@ -299,7 +299,7 @@
             "Algorithm development",
             "Visualizations"
         ],
-        "UX/UI Designer": [
+        "ux/ui designer": [
             "Human-computer interaction",
             "Interface design",
             "Usability standards",
@@ -307,7 +307,7 @@
             "CAD tools",
             "Task analysis"
         ],
-        "Digital Marketing Specialist": [
+        "digital marketing specialist": [
             "Product marketing",
             "Technical marketing",
             "Content creation",
@@ -316,7 +316,7 @@
             "Event management",
             "Brand strategy"
         ],
-        "Sales Manager": [
+        "sales manager": [
             "Enterprise sales",
             "Account management",
             "Channel partners",
@@ -325,7 +325,7 @@
             "Sales forecasting",
             "Customer acquisition"
         ],
-        "Cloud Solutions Architect": [
+        "cloud solutions architect": [
             "High-performance computing",
             "Data center infrastructure",
             "Parallel processing",
@@ -334,7 +334,7 @@
             "Security protocols",
             "Network architecture"
         ],
-        "Technical Support Specialist": [
+        "technical support specialist": [
             "System debugging",
             "Firmware troubleshooting",
             "Hardware diagnostics",

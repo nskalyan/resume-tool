@@ -1,8 +1,8 @@
-from services.matcher import get_similarity_score
-from utils.ats_rules import ats_score
-from utils.structure_check import check_structure_quality
-from services.parser import parse_resume
-from services.suggestions import suggest_resume_improvements
+from app.services.matcher import get_similarity_score
+from app.utils.ats_rules import ats_score
+from app.utils.structure_check import check_structure_quality
+from app.services.parser import parse_resume
+from app.services.suggestions import suggest_resume_improvements
 
 def evaluate_resume(resume_text, jd_text, company=None, role=None):
     relevance = get_similarity_score(resume_text, jd_text)

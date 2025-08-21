@@ -1,22 +1,21 @@
 import React, { useState, useEffect, useRef } from "react";
 
+const API_BASE_URL =
+  import.meta.env.VITE_API_BASE_URL || "http://localhost:8000";
+
 const ResumeEditorPage: React.FC = () => {
   const [resumeContent, setResumeContent] = useState("");
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
-  // useRef to get a reference to the textarea DOM element
   const textAreaRef = useRef<HTMLTextAreaElement>(null);
 
-  // useEffect to dynamically resize the textarea
   useEffect(() => {
     if (textAreaRef.current) {
-      // Set the height to 'auto' to calculate the new scroll height
       textAreaRef.current.style.height = "auto";
-      // Set the height to the scroll height to fit the content
       textAreaRef.current.style.height = `${textAreaRef.current.scrollHeight}px`;
     }
-  }, [resumeContent]); // Re-run this effect whenever resumeContent changes
+  }, [resumeContent]);
 
   const handleFileUpload = async (e: React.ChangeEvent<HTMLInputElement>) => {
     const file = e.target.files?.[0];
@@ -26,10 +25,12 @@ const ResumeEditorPage: React.FC = () => {
     try {
       const formData = new FormData();
       formData.append("file", file);
-      const res = await fetch("http://localhost:8000/api/upload-resume/", {
+
+      const res = await fetch(`${API_BASE_URL}/api/upload-resume/`, {
         method: "POST",
         body: formData,
       });
+
       if (!res.ok) throw new Error("Failed to upload and extract resume.");
       const data = await res.json();
       setResumeContent(data.text || "");
@@ -58,7 +59,9 @@ const ResumeEditorPage: React.FC = () => {
   return (
     <div className="min-h-screen flex justify-center items-start bg-gradient-to-br from-[#ffe3ec] via-[#d0e8ff] to-[#e0ffe3] py-12 px-4">
       <div className="w-full max-w-5xl bg-white rounded-2xl shadow-xl border border-fuchsia-200 p-8 flex flex-col gap-6">
-        <h1 className="text-4xl font-bold text-center text-fuchsia-800">Resume Editor</h1>
+        <h1 className="text-4xl font-bold text-center text-fuchsia-800">
+          Resume Editor
+        </h1>
 
         <div className="flex flex-col md:flex-row gap-4 items-center">
           <label className="text-lg font-medium text-slate-700">
@@ -72,17 +75,19 @@ const ResumeEditorPage: React.FC = () => {
             disabled={loading}
           />
           {loading && (
-            <span className="text-blue-600 font-medium ml-2">Extracting text...</span>
+            <span className="text-blue-600 font-medium ml-2">
+              Extracting text...
+            </span>
           )}
         </div>
 
         <textarea
-          ref={textAreaRef} // Assign the ref to the textarea
-          className="w-full border border-gray-300 rounded-xl px-4 py-3 font-mono text-base resize-none focus:outline-none focus:ring-2 focus:ring-blue-500 overflow-hidden" // Add `overflow-hidden` to prevent scrollbars
+          ref={textAreaRef}
+          className="w-full border border-gray-300 rounded-xl px-4 py-3 font-mono text-base resize-none focus:outline-none focus:ring-2 focus:ring-blue-500 overflow-hidden"
           placeholder="Write, paste, or upload your resume content here..."
           value={resumeContent}
           onChange={(e) => setResumeContent(e.target.value)}
-          rows={5} // Set a default number of rows for initial rendering
+          rows={5}
         />
 
         <div className="flex flex-wrap gap-4 justify-end">

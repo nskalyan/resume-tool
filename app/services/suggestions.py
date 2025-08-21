@@ -1,30 +1,43 @@
-from utils.load_data import load_keywords, load_resume_examples
 
-# Load data from JSON files
-keywords_db = load_keywords()
-examples_db = load_resume_examples()
-
-def get_role_keywords(company, role):
-    return keywords_db.get(company, {}).get(role, [])
-
-def get_resume_example(company, role):
-    return examples_db.get(company, {}).get(role, None)
+from app.utils.load_data import load_keywords
 
 def suggest_resume_improvements(resume_text, company, role):
-    resume_keywords = []
+    keywords_db = load_keywords()
+    
+    # Normalize company and role names for case-insensitive matching
+    company_key = company.lower()
+    role_key = role.lower()
+    
+    # Retrieve target keywords, with a fallback to an empty list
+    target_keywords = keywords_db.get(company_key, {}).get(role_key, [])
+    
+    missing_keywords = []
+    improvement_suggestions = []
+    
+    # Check if a keyword list was found
+    if target_keywords:
+        resume_text_lower = resume_text.lower()
+        
+        # Determine missing keywords
+        missing_keywords = [
+            kw for kw in target_keywords 
+            if kw.lower() not in resume_text_lower
+        ]
 
-    # Use keyword extractor (or regex) to simulate section extraction from text
-    # For now, treat entire text as one blob
-    text_blob = resume_text.lower()
-
-    target_keywords = get_role_keywords(company, role)
-
-    missing = [kw for kw in target_keywords if kw.lower() not in text_blob]
+        if missing_keywords:
+            improvement_suggestions.append(
+                f"Consider adding the following keywords: {', '.join(missing_keywords)}"
+            )
+            improvement_suggestions.append(
+                "Integrate these keywords naturally into your experience, skills, and summary sections."
+            )
+    else:
+        # Fallback for when company/role is not in the database
+        improvement_suggestions.append(
+            f"No specific keyword suggestions available for '{company}' - '{role}'. Try a different company or role for more targeted feedback."
+        )
 
     return {
-        "missing_keywords": missing,
-        "example_resume_link": get_resume_example(company, role),
-        "total_target": len(target_keywords),
-        "matched": len(target_keywords) - len(missing)
+        "missing_keywords": missing_keywords,
+        "improvement_suggestions": improvement_suggestions,
     }
-

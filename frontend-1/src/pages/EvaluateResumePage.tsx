@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-import { evaluateResume } from "../api/api";
 import "../styles/pages.css";
+import { evaluateResume, API_BASE_URL } from "../api/api";
+
 
 const EvaluateResumePage: React.FC = () => {
   const [resumeText, setResumeText] = useState("");
@@ -20,10 +21,10 @@ const EvaluateResumePage: React.FC = () => {
     try {
       const formData = new FormData();
       formData.append("file", file);
-      const res = await fetch("http://localhost:8000/api/upload-resume/", {
-        method: "POST",
-        body: formData,
-      });
+const res = await fetch(`${API_BASE_URL}/upload-resume/`, {
+  method: "POST",
+  body: formData,
+});
       if (!res.ok) throw new Error("Failed to upload and extract resume.");
       const data = await res.json();
       setResumeText(data.text || "");

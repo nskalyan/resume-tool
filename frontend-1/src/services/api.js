@@ -1,5 +1,7 @@
 // filepath: c:\Users\nunna\Downloads\resume-tool\frontend\src\services\api.js
-const BASE_URL = "http://localhost:8000/api"; 
+
+// Use environment variable for backend API
+const BASE_URL = import.meta.env.VITE_API_BASE_URL || "http://localhost:8000/api";
 
 // Upload resume file (PDF/DOCX)
 export async function uploadResume(file) {
