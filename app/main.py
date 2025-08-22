@@ -12,7 +12,7 @@ app = FastAPI()
 # Read from .env
 origins = [
     "http://localhost:5173",
-    os.getenv("FRONTEND_URL"),   # ✅ dynamically from .env
+    "https://resume-tool-gsvd.vercel.app",   # ✅ dynamically from .env
 ]
 
 app.add_middleware(
