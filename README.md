@@ -69,7 +69,7 @@ npm run build  # in deployment environments
 
 ## Getting Started
 1. Clone the repository
-2. Install dependencies (`pip install -r requirements.txt` for backend, `npm install` for frontend)
+2. Install dependencies (`pip install -r requirements.txt` for backend, `npm run dev` for frontend)
 3. Start backend and frontend servers
 4. Access the app via browser
 
