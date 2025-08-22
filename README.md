@@ -1,7 +1,7 @@
 # AI-Powered Resume Evaluator, Optimizer & Generator
 
 ## Overview
-A full-stack application that helps users screen, optimize, and generate resumes using AI. It features ATS compliance checks, role fit scoring, personalized suggestions, and a beautiful frontend UI. Users can upload resumes, receive actionable feedback, and generate role-specific templates.
+A full-stack application that helps users screen, optimize, and generate resumes using AI. It features ATS compliance checks, role fit scoring, personalized suggestions, and a beautiful frontend UI. Users can upload resumes, receive actionable feedback, and see role-specific templates.
 ---
 
 ## Features
@@ -14,9 +14,12 @@ A full-stack application that helps users screen, optimize, and generate resumes
 Install the following Python libraries for backend functionality:
 
 ```bash
-pip install fastapi uvicorn python-multipart pdfminer.six python-docx spacy nltk sentence-transformers scikit-learn
-python -m nltk.downloader punkt stopwords
-python -m spacy download en_core_web_sm
+pip install -r requirements.txt
+uvicorn app.main:app --reload   #local host u can specify port like 0.0.0.0 in deployment
+cd frontend-1
+npm run dev  # for locally running
+npm run build  # in deployment environments
+
 ```
 
     - Checks keyword matching, formatting, section headers
@@ -34,7 +37,6 @@ python -m spacy download en_core_web_sm
 ### 2. Resume Optimization
 - **Personalized Suggestions:**
   - Missing keywords
-  - Rephrase passive language
   - Highlight unclear project roles
 - **Interactive Editor:**
   - Live preview with editable sections
@@ -47,31 +49,21 @@ python -m spacy download en_core_web_sm
   - Output: Role-optimized template with pre-filled sections
 - **Template Selector:**
   - Modern, minimalist, academic, ATS-friendly designs
-- **Language Tone Selector:**
-  - Formal / Creative / Technical
 
 ### 4. Beautiful Frontend UI
 - Clean, minimal, dynamic animations
 - Dark/light mode
 - Drag-and-drop resume upload
-- Heatmap of strong/weak areas
-- Progress bar for optimization score
 
-### 5. Free Hosting + Account System
-- Simple login/signup
-- Resume history and versioning
-- Save and compare multiple versions
-- Export as PDF or DOCX
 
 ---
 
 ## Tech Stack
-- **Backend:** Python (FastAPI/Flask), NLP libraries (spaCy, SBERT, transformers)
+- **Backend:** Python (FastAPI),sentence-transformers,scikit
 - **Frontend:** React.js, Tailwind CSS, animation libraries
-- **Database:** PostgreSQL / MongoDB
-- **File Handling:** pdfminer, python-docx
-- **Authentication:** JWT, OAuth
-- **Hosting:** Vercel, Netlify, or free-tier cloud
+- **Database:** PostgreSQL / MongoDB(current in future will be extended postgress)
+- **File Handling:** pdfminer, docx2txt,re
+- **Hosting:** Vercel(Frontend), Render(backend)
 
 ---
 
@@ -105,3 +97,4 @@ Pull requests welcome! For major changes, open an issue first.
 
 ## Contact
 For questions, reach out via Issues or email.
+nunna.srinivaskalyan@gmail.com
